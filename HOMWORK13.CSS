@@ -1,0 +1,101 @@
+* {
+    box-sizing: border-box;
+}
+
+header {
+    text-align: center;
+    padding-top: 40px;
+    padding: 20px;
+    font-size: 30;
+    
+}
+
+body {
+	margin: 0 20px;
+	font-family: 'Trispace', sans-serif;
+	background-color: #99ccff;
+    background-size: cover;
+}
+
+main {
+    margin: 0 20%;
+}
+
+body form {
+    padding: 20px;
+    text-align: justify;
+}
+
+input[type=text], select, input[type=password], input[type=submit] {
+    width: 100%;
+    margin-top: 5px;
+    height: 40px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+}
+
+label {
+    margin-bottom: 10px;
+}
+
+textarea {
+    width: 100%;
+    height: 150px;
+    margin-top: 5px;
+    padding: 5px 10px;
+    border-radius: 3px;
+    border: none;
+    outline: none;
+    resize: none;
+}
+
+input[type=submit] {
+    background-color: rgb(0, 131, 0);
+    color: white;    
+}
+
+input[type=submit]:hover {
+    background-color: cyan;
+    color: black
+}
+
+input:invalid+span::after, textarea:invalid+span::after {
+    position: absolute;
+    padding: 15px 10px;
+    content: "\00d7";
+}
+
+input:valid+span::after, textarea:valid+span::after {
+    position: absolute;
+    padding: 10px;
+    content: "\2713";
+}
+
+
+
+
+
+
+
+
+
+
+
+
+/* input[type=email]:invalid {
+    background-color: rgb(255, 136, 127);
+}
+
+input[type=submit] {
+    background-color: rgb(11, 172, 172);
+}
+
+/* input:valid {
+    background-color: white;
+} */
+
+/* input:required {
+    background-color: whitesmoke;
+} */ 
